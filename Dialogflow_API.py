@@ -12,7 +12,7 @@ ai = MetaAI()
 app = Flask(__name__)
 
 # Set Dialogflow credentials from environment variable
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_APPLICATION_CREDENTIALS_PATH", 'C:/Users/hp/Downloads/PT-ChatBot-BE-staging/PT-ChatBot-BE-staging/v1/src/secrets/pt-generative-bot-04bdfdba5a53.json')
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv("GOOGLE_APPLICATION_CREDENTIALS_PATH", 'pt-generative-bot-04bdfdba5a53.json')
 
 # Initialize the Dialogflow session client
 session_client = dialogflow.SessionsClient()
